@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pita Calimero - Menu Digital</title>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#636563",
+                        "on-primary-fixed": "#161e00",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#3f5000",
+                        "surface-container-highest": "#e2e3e0",
+                        "inverse-surface": "#2f3130",
+                        "on-secondary-fixed-variant": "#454746",
+                        "surface-container-high": "#e8e8e6",
+                        "on-tertiary-container": "#4d4a3a",
+                        "on-secondary-fixed": "#1a1c1b",
+                        "inverse-on-surface": "#f1f1ee",
+                        "on-primary-fixed-variant": "#3c4d00",
+                        "primary-container": "#a7c64a",
+                        "outline": "#757966",
+                        "secondary": "#5d5f5d",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#506600",
+                        "outline-variant": "#c5c8b3",
+                        "surface-tint": "#506600",
+                        "surface-container-low": "#f4f4f1",
+                        "surface": "#faf9f7",
+                        "on-surface-variant": "#454838",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#bfbaa6",
+                        "background": "#faf9f7",
+                        "secondary-fixed-dim": "#c6c7c4",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#e2e3e0",
+                        "surface-bright": "#faf9f7",
+                        "primary-fixed-dim": "#b3d355",
+                        "primary-fixed": "#cfef6e",
+                        "on-tertiary-fixed-variant": "#4a4737",
+                        "secondary-fixed": "#e2e3e0",
+                        "surface-container": "#eeeeec",
+                        "inverse-primary": "#b3d355",
+                        "on-tertiary-fixed": "#1e1c0f",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e2e3e0",
+                        "tertiary": "#625f4e",
+                        "on-surface": "#1a1c1b",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#dadad8",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#e8e3cd",
+                        "on-background": "#1a1c1b",
+                        "tertiary-fixed-dim": "#ccc7b2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "display": ["Epilogue"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="bg-[#faf9f7]/80 dark:bg-[#0f1110]/80 backdrop-blur-xl docked full-width top-0 sticky z-50 transition-all duration-300">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#506600] dark:text-[#a7c64a] scale-102 active:scale-95 transition-transform duration-300 ease-out p-2 rounded-full hover:bg-[#e8e8e6]">menu</button>
+<span class="font-['Epilogue'] font-black tracking-tighter text-[#1a1c1b] dark:text-[#faf9f7] text-2xl uppercase">Pita Calimero</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#506600] dark:text-[#a7c64a] scale-102 active:scale-95 transition-transform duration-300 ease-out p-2 rounded-full hover:bg-[#e8e8e6]">shopping_bag</button>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-4 md:px-8">
+<!-- Hero Section -->
+<header class="relative overflow-hidden pt-8 pb-16 md:py-24">
+<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+<div class="z-10 order-2 md:order-1">
+<span class="font-label text-label-md uppercase tracking-[0.1em] text-primary mb-4 block">L'Artisan de Malmedy</span>
+<h1 class="font-display font-black text-6xl md:text-8xl tracking-tight leading-[0.9] text-on-surface mb-6">
+                        L'Artisan du <span class="text-primary italic">Goût</span> à Malmedy
+                    </h1>
+<p class="text-xl text-on-surface-variant max-w-md leading-relaxed mb-8">
+                        Découvrez l'authenticité de nos recettes maison, où chaque pain est pétri avec passion et chaque viande marinée selon nos secrets de famille.
+                    </p>
+<div class="flex items-center gap-4">
+<button class="px-8 py-4 bg-primary text-on-primary rounded-xl font-semibold scale-102 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary/20">Explorer le Menu</button>
+</div>
+</div>
+<div class="relative order-1 md:order-2">
+<div class="aspect-square relative z-10 overflow-hidden rounded-tl-[100px] rounded-br-[100px] shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="A macro photograph of a steaming, golden-brown Turkish Lahmacun topped with finely minced lamb, fresh parsley, and vibrant red tomatoes. The lighting is warm and directional, emphasizing the crispy texture of the artisanal dough and the glistening juices of the herbs. The background is a rustic wooden kitchen surface in a high-end Mediterranean restaurant. The overall aesthetic is warm, inviting, and professional, reflecting an artisan culinary heritage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4N5aAP7p0UTNKLFMY2-APAQTHrWgZLqA7RoZ_AjMBcg29ltFpQ-Rg7j2Jew0P2GXtK898UAzenKRG46lIyCWICZn1szAj-qWFTC_ICmV4GNciv3PSwXvXwJWDx6l4tfwga7MB4hpN-KRglWo-kaawjr4zJJJyZhRs6NRaNxihQZxyZEysXqPBHFaUTBkAdZO4pYrR9nSjyu0ndcDg6zsJzJwLi8V0_eJZn_UrkTSXATmcHLIs8MM19bWRX8WJdNSqGuf_tqfO7Hc"/>
+</div>
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-tertiary-container rounded-full flex items-center justify-center rotate-12 z-20 shadow-xl border-4 border-surface">
+<div class="text-center">
+<span class="block font-display font-black text-on-tertiary-container text-xs uppercase tracking-tighter">Fait</span>
+<span class="block font-display font-black text-on-tertiary-container text-lg uppercase leading-none">Maison</span>
+</div>
+</div>
+<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</header>
+<!-- Menu Navigation -->
+<section class="sticky top-[72px] z-40 bg-surface/95 backdrop-blur-md py-4 -mx-4 px-4 mb-12">
+<div class="flex items-center gap-3 overflow-x-auto hide-scrollbar pb-2">
+<button class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-bold whitespace-nowrap text-sm transition-all">Pitas</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-medium whitespace-nowrap text-sm hover:bg-surface-container-high transition-all">Lahmacun</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-medium whitespace-nowrap text-sm hover:bg-surface-container-high transition-all">Durums</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-medium whitespace-nowrap text-sm hover:bg-surface-container-high transition-all">Assiettes</button>
+<button class="px-6 py-2.5 rounded-full bg-surface-container-low text-on-surface-variant font-medium whitespace-nowrap text-sm hover:bg-surface-container-high transition-all">Accompagnements</button>
+</div>
+</section>
+<!-- Menu List (Bento-style Grid) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
+<!-- Specialty Card -->
+<div class="md:col-span-8 group bg-surface-container-lowest rounded-xl p-8 border-2 border-primary-container relative overflow-hidden flex flex-col md:flex-row gap-8 transition-all hover:shadow-xl hover:-translate-y-1">
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest z-10">Signature</div>
+<div class="w-full md:w-1/2 aspect-[4/3] rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A top-down view of a traditional Turkish Lahmacun served on a piece of parchment paper. The thin, crispy dough is topped with a rich layer of spiced minced meat and garnished with fresh lemon wedges, sliced red onions, and a handful of bright green cilantro. The lighting is soft and natural, coming from a side window, highlighting the organic textures of the food and the craft paper. The setting is clean and minimalist, using a light neutral color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyvG5OhAdAi9SSysyFlkCT5LI9kvpLW0NcAEzdK3aj_Dpkt1_T41iTF9_QwBx1WxZbpOj9gnFKLb8_mMuCRr17RRsvDaYDN6Y7fLX-cV1BMbVK7B4rIinEThC5CsidH7bN6kwhWaQzYHNuBjUM22UZOafCtXbPcqug9ZtA_vDIE7pIKIvd0Aa_CTGKJCd1hX68d_9tKtZiBxwx_5ua-_XRK64is99mE7rJbOWwlkmQEK8XT_qFoWfnHoTg_-_8aN_L46R8txz4AIM"/>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-center">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-display font-black text-3xl tracking-tight">Le Véritable Lahmacun</h3>
+<span class="font-display font-bold text-2xl text-primary">6,50€</span>
+</div>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Notre spécialité historique : une galette fine garnie d'un mélange de viande et légumes frais selon la tradition anatolienne.</p>
+<details class="group/acc">
+<summary class="flex items-center gap-2 cursor-pointer list-none text-primary font-bold text-sm uppercase tracking-wider">
+<span class="material-symbols-outlined transition-transform group-open/acc:rotate-180">expand_more</span>
+                            Détails &amp; Allergènes
+                        </summary>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 space-y-4">
+<div>
+<p class="text-sm font-semibold mb-1">Composition</p>
+<p class="text-sm text-on-surface-variant">Pain artisanal, viande marinée, crudités fraîches du matin, épices secrètes.</p>
+</div>
+<div class="flex flex-wrap gap-3">
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded text-[10px] font-bold">
+<span class="material-symbols-outlined text-[16px]">bakery_dining</span> GLUTEN
+                                </div>
+<div class="flex items-center gap-1 bg-tertiary-container/30 px-2 py-1 rounded text-[10px] font-bold text-on-tertiary-container">
+<span class="material-symbols-outlined text-[16px]">eco</span> MAISON
+                                </div>
+</div>
+</div>
+</details>
+</div>
+</div>
+<!-- Standard Card 1 -->
+<div class="md:col-span-4 group bg-surface-container-low rounded-xl p-6 transition-all hover:shadow-lg">
+<div class="aspect-video mb-4 rounded-lg overflow-hidden bg-white">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close-up of a generously stuffed Pita Viande. Pieces of grilled, marinated lamb are visible alongside crisp lettuce, juicy tomato slices, and a dollop of white garlic sauce, all tucked inside a soft, slightly charred pita pocket. The photo is taken with a shallow depth of field, making the ingredients pop. The lighting is bright and cheerful, suggesting a daytime lunch setting. The aesthetic is clean, professional, and focuses on ingredient freshness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-GWEar56Rcw1ZLR9aVAc_ivClMlEFluaPvj7hdAke2oxljl-m8QCAI8gnst3LIHEx6kHsd8foxXCAi_KTT6RuSLj3kMDbXVG_eRyC14cD7hm4LEbfR3Da7WIFij6MYwmKjDIZJIYDUCt58_Z2FC8eIMFRI5Kn46V7jIL4IgbIfq48qESNb7Ryq7SK0X6EvcDCHZelkRQfKolgtfXUYSmEoS2PpesCE_KwVRzIm9PvNXvaJBHeQdC0WXZf31hKAivSXgs88gfccg4"/>
+</div>
+<div class="flex justify-between items-center mb-1">
+<h4 class="font-display font-bold text-xl">Pita Viande</h4>
+<span class="font-display font-bold text-lg text-primary">5,50€</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-4 line-clamp-2">Pain artisanal, viande marinée, crudités fraîches du matin.</p>
+<details class="group/acc">
+<summary class="flex items-center gap-2 cursor-pointer list-none text-on-surface-variant font-bold text-[10px] uppercase tracking-wider">
+<span class="material-symbols-outlined text-xs">info</span> Allergènes
+                    </summary>
+<div class="mt-2 flex gap-2">
+<span class="w-6 h-6 rounded-full bg-error-container/20 flex items-center justify-center material-symbols-outlined text-xs text-error" title="Gluten">bakery_dining</span>
+<span class="w-6 h-6 rounded-full bg-error-container/20 flex items-center justify-center material-symbols-outlined text-xs text-error" title="Lactose">water_drop</span>
+</div>
+</details>
+</div>
+<!-- Standard Card 2 -->
+<div class="md:col-span-4 group bg-surface-container-low rounded-xl p-6 transition-all hover:shadow-lg">
+<div class="aspect-video mb-4 rounded-lg overflow-hidden bg-white">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A delicious Pita Poulet showcasing tender, grilled chicken strips seasoned with golden-yellow turmeric and herbs. The chicken is layered with fresh cucumbers, onions, and a vibrant green herb sauce inside a warm, fluffy pita. The image is captured in a high-key lighting style, giving it a fresh and healthy feeling. The color palette is dominated by warm yellows and greens, creating a mouth-watering visual experience. The background is a clean white marble surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-ZfYV2Jts2Vd34cWM-EmpGB0Kxr9uNA3j563jzXIIh2d3ExtTeGKBD5ovi5LzBS95fnBqSCqLKkiB_b9VbV_sjHbGrbLzquQZOm3RdaLZEnMAghRtMndFSYrUCyMw-L-b6dannKytnKkXmSjUKwbTen2yosmETKyHsNduJ7nXbPt3iSJg0ce6PRhBjookeMm95Rk12wdXaZ9Qlcn12caLZsffLbcSa6LJlWQya8IjahrhDmWyEFz2hCYHBCwlE-tJCjNLBwsjgpI"/>
+</div>
+<div class="flex justify-between items-center mb-1">
+<h4 class="font-display font-bold text-xl">Pita Poulet</h4>
+<span class="font-display font-bold text-lg text-primary">6,00€</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-4 line-clamp-2">Poulet fermier grillé, sauce yaourt aux herbes, crudités du jour.</p>
+<details class="group/acc">
+<summary class="flex items-center gap-2 cursor-pointer list-none text-on-surface-variant font-bold text-[10px] uppercase tracking-wider">
+<span class="material-symbols-outlined text-xs">info</span> Allergènes
+                    </summary>
+<div class="mt-2 flex gap-2">
+<span class="w-6 h-6 rounded-full bg-error-container/20 flex items-center justify-center material-symbols-outlined text-xs text-error" title="Gluten">bakery_dining</span>
+</div>
+</details>
+</div>
+<!-- Premium Section / Assiette -->
+<div class="md:col-span-8 bg-on-surface text-surface rounded-xl p-10 flex flex-col md:flex-row items-center gap-10 overflow-hidden group">
+<div class="w-full md:w-2/5 order-2 md:order-1">
+<div class="bg-primary px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.2em] inline-block mb-4">À Partager</div>
+<h3 class="font-display font-black text-4xl mb-2">Assiette Maison</h3>
+<p class="text-surface/70 mb-6 italic text-lg">Le festin Calimero pour 2 personnes</p>
+<div class="font-display font-bold text-3xl mb-6 text-primary-container">31,00€</div>
+<ul class="space-y-2 mb-8 text-sm text-surface/80">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Mix de viandes marinées</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Frites fraîches &amp; Riz pilaf</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Sélection de mezzés maison</li>
+</ul>
+<button class="w-full py-3 bg-surface text-on-surface font-bold rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-all">Commander</button>
+</div>
+<div class="w-full md:w-3/5 order-1 md:order-2 h-full">
+<img class="w-full h-64 md:h-full object-cover rounded-xl shadow-2xl group-hover:scale-105 transition-transform duration-700" data-alt="A grand platter for two, featuring an array of Mediterranean delights. In the center are piles of assorted grilled meats like lamb chops and chicken skewers. Surrounding the meat are small ceramic bowls filled with colorful mezzes like hummus, tzatziki, and baba ganoush. Golden, crispy fries and fluffy rice pilaf fill the remaining spaces. The lighting is dramatic and warm, with shadows creating depth. The aesthetic is luxurious yet rustic, set against a dark, moody background to make the food colors pop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvilY4lGnt3XUc47b20QElFGfsdzdtVQ--vYS9vs8v_KSgXLAqZ00ne1X2wTnzyVYZNRHXkJmfGcKcZVniFGpWA2gqClOG2XY9PQb7BSC5kTp2Cj1CVj4ktfUZuwPmmJzX-ItlkaOgIeWRmiak2DFhQ6W-Dz7LYyLUCOOhtvhe6sObLDxo-TMEpqvJlITb-GldoOsflvHO8cGIR19wuoxgSpuPS4CCNRLrHCMKAkUC9gVOjUHG0P-o06vVf5aBCvG5_VLs7Xd7uZY"/>
+</div>
+</div>
+<!-- Small Card / Side -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-6 group hover:bg-surface-container-high transition-all">
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-display font-bold text-xl mb-1">Frites</h4>
+<p class="text-sm text-on-surface-variant">Cuites en deux bains selon la tradition belge.</p>
+<div class="mt-4 flex gap-2">
+<span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase">Végétarien</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[10px] font-bold rounded uppercase">Vegan</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-display font-bold text-xl text-primary block">2,80€</span>
+<div class="mt-2 w-12 h-12 rounded-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A close-up vertical shot of hand-cut, golden-brown Belgian fries served in a paper cone. Some coarse sea salt is visible on the surface of the fries. The background is softly blurred, showing a warm, cozy cafe interior. The lighting is bright and natural, highlighting the crispiness and texture of the potatoes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQeOOt3757FdAD8bSY5t465FqNHuUPgHIhyNLUz0-5ZRl3wRGrW3LYjAxhsS9fY-rLITCcRmfbLBHZ8E9c9z3t2Omcd43bZFSB9tnq59PLCURFroNjaXvIqoKhLckVx9grAaWwGzfr8Ygvv252NSqpqTUAId8nQc9HbRAzK_h-PBS0rdWsD4PBVjpOXxM_vKnxrl5g3P3OR8MyqyLssMbDnO0iP7m0tf_Hl2J0tlUKkMfZ5esk2qGBCpHFCudKbVyY_Js9pK272fk"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f4f4f1] dark:bg-[#1a1c1b] full-width py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
+<div class="space-y-4">
+<span class="font-['Epilogue'] font-bold text-[#1a1c1b] dark:text-[#faf9f7] text-3xl">Pita Calimero</span>
+<p class="font-['Plus_Jakarta_Sans'] text-label-md uppercase tracking-[0.05em] text-[#1a1c1b]/70 dark:text-[#faf9f7]/70">L'Artisan de Malmedy - Depuis 1998</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-[#506600] cursor-pointer hover:scale-110 transition-transform">social_leaderboard</span>
+<span class="material-symbols-outlined text-[#506600] cursor-pointer hover:scale-110 transition-transform">camera_alt</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<nav class="flex flex-col gap-2">
+<a class="font-['Plus_Jakarta_Sans'] text-label-md uppercase tracking-[0.05em] text-[#1a1c1b]/70 dark:text-[#faf9f7]/70 hover:text-[#506600] dark:hover:text-[#a7c64a] transition-all underline-offset-4 hover:underline" href="#">Menu</a>
+<a class="font-['Plus_Jakarta_Sans'] text-label-md uppercase tracking-[0.05em] text-[#1a1c1b]/70 dark:text-[#faf9f7]/70 hover:text-[#506600] dark:hover:text-[#a7c64a] transition-all underline-offset-4 hover:underline" href="#">L'Histoire</a>
+</nav>
+<nav class="flex flex-col gap-2">
+<a class="font-['Plus_Jakarta_Sans'] text-label-md uppercase tracking-[0.05em] text-[#1a1c1b]/70 dark:text-[#faf9f7]/70 hover:text-[#506600] dark:hover:text-[#a7c64a] transition-all underline-offset-4 hover:underline" href="#">Contact</a>
+<a class="font-['Plus_Jakarta_Sans'] text-label-md uppercase tracking-[0.05em] text-[#1a1c1b]/70 dark:text-[#faf9f7]/70 hover:text-[#506600] dark:hover:text-[#a7c64a] transition-all underline-offset-4 hover:underline" href="#">Localisation</a>
+</nav>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-outline-variant/30 text-center">
+<p class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-[0.1em] text-[#1a1c1b]/40">© 2024 Pita Calimero - L'Artisan de Malmedy</p>
+</div>
+</footer>
+</body></html>

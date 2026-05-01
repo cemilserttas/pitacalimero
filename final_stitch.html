@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pita Calimero - Menu Digital Exhaustif</title>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700;800;900&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#636563",
+                        "on-primary-fixed": "#161e00",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-container": "#3f5000",
+                        "surface-container-highest": "#e2e3e0",
+                        "inverse-surface": "#2f3130",
+                        "on-secondary-fixed-variant": "#454746",
+                        "surface-container-high": "#e8e8e6",
+                        "on-tertiary-container": "#4d4a3a",
+                        "on-secondary-fixed": "#1a1c1b",
+                        "inverse-on-surface": "#f1f1ee",
+                        "on-primary-fixed-variant": "#3c4d00",
+                        "primary-container": "#a7c64a",
+                        "outline": "#757966",
+                        "secondary": "#5d5f5d",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#506600",
+                        "outline-variant": "#c5c8b3",
+                        "surface-tint": "#506600",
+                        "surface-container-low": "#f4f4f1",
+                        "surface": "#faf9f7",
+                        "on-surface-variant": "#454838",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#bfbaa6",
+                        "background": "#faf9f7",
+                        "secondary-fixed-dim": "#c6c7c4",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#e2e3e0",
+                        "surface-bright": "#faf9f7",
+                        "primary-fixed-dim": "#b3d355",
+                        "primary-fixed": "#cfef6e",
+                        "on-tertiary-fixed-variant": "#4a4737",
+                        "secondary-fixed": "#e2e3e0",
+                        "surface-container": "#eeeeec",
+                        "inverse-primary": "#b3d355",
+                        "on-tertiary-fixed": "#1e1c0f",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e2e3e0",
+                        "tertiary": "#625f4e",
+                        "on-surface": "#1a1c1b",
+                        "on-primary": "#ffffff",
+                        "surface-dim": "#dadad8",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#e8e3cd",
+                        "on-background": "#1a1c1b",
+                        "tertiary-fixed-dim": "#ccc7b2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Epilogue"],
+                        "display": ["Epilogue"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        html { scroll-behavior: smooth; }
+        body { min-height: 100dvh; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="bg-[#faf9f7]/80 dark:bg-[#0f1110]/80 backdrop-blur-xl docked full-width top-0 sticky z-50 transition-all duration-300">
+<div class="flex justify-between items-center px-6 py-4 w-full max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#506600] dark:text-[#a7c64a] scale-102 active:scale-95 transition-transform duration-300 ease-out p-2 rounded-full hover:bg-[#e8e8e6]">menu</button>
+<span class="font-['Epilogue'] font-black tracking-tighter text-[#1a1c1b] dark:text-[#faf9f7] text-2xl uppercase">Pita Calimero</span>
+</div>
+<div class="flex items-center gap-4">
+<!-- Shopping bag removed as requested -->
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-4 md:px-8">
+<!-- Hero Section -->
+<header class="relative overflow-hidden pt-8 pb-16 md:py-24">
+<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+<div class="z-10 order-2 md:order-1">
+<span class="font-label text-label-md uppercase tracking-[0.1em] text-primary mb-4 block">L'Artisan de Malmedy</span>
+<h1 class="font-display font-black text-6xl md:text-8xl tracking-tight leading-[0.9] text-on-surface mb-6">
+                    L'Artisan du <span class="text-primary italic">Goût</span> à Malmedy
+                </h1>
+<p class="text-xl text-on-surface-variant max-w-md leading-relaxed mb-8">
+                    Découvrez l'authenticité de nos recettes maison, où chaque pain est pétri avec passion et chaque viande marinée selon nos secrets de famille.
+                </p>
+<div class="flex items-center gap-4">
+<a class="px-8 py-4 bg-primary text-on-primary rounded-xl font-semibold scale-102 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary/20 text-center" href="#menu-nav">Explorer le Menu</a>
+</div>
+</div>
+<div class="relative order-1 md:order-2">
+<div class="aspect-square relative z-10 overflow-hidden rounded-tl-[100px] rounded-br-[100px] shadow-2xl">
+<img alt="Artisanal food photograph" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4N5aAP7p0UTNKLFMY2-APAQTHrWgZLqA7RoZ_AjMBcg29ltFpQ-Rg7j2Jew0P2GXtK898UAzenKRG46lIyCWICZn1szAj-qWFTC_ICmV4GNciv3PSwXvXwJWDx6l4tfwga7MB4hpN-KRglWo-kaawjr4zJJJyZhRs6NRaNxihQZxyZEysXqPBHFaUTBkAdZO4pYrR9nSjyu0ndcDg6zsJzJwLi8V0_eJZn_UrkTSXATmcHLIs8MM19bWRX8WJdNSqGuf_tqfO7Hc"/>
+</div>
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-tertiary-container rounded-full flex items-center justify-center rotate-12 z-20 shadow-xl border-4 border-surface">
+<div class="text-center">
+<span class="block font-display font-black text-on-tertiary-container text-xs uppercase tracking-tighter">Fait</span>
+<span class="block font-display font-black text-on-tertiary-container text-lg uppercase leading-none">Maison</span>
+</div>
+</div>
+<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</header>
+<!-- Menu Navigation -->
+<section class="sticky top-[72px] z-40 bg-surface/70 backdrop-blur-xl py-4 -mx-4 px-4 mb-12 border-b border-outline-variant/20 shadow-sm overflow-hidden" id="menu-nav">
+<div class="flex items-center gap-3 overflow-x-auto hide-scrollbar pb-2 max-w-7xl mx-auto touch-pan-x">
+<a class="px-6 py-2.5 rounded-full bg-surface-container text-on-surface-variant font-medium whitespace-nowrap text-sm hover:bg-surface-container-high hover:scale-105 active:scale-95 transition-all" href="#pitas">Pitas &amp; Durums</a>
+<a class="px-6 py-2.5 rounded-full bg-surface-container text-on-surface-variant font-medium whitespace-nowrap text-sm hover:bg-surface-container-high hover:scale-105 active:scale-95 transition-all" href="#lahmacun">Lahmacun</a>
+<a class="px-6 py-2.5 rounded-full bg-surface-container text-on-surface-variant font-medium whitespace-nowrap text-sm hover:bg-surface-container-high hover:scale-105 active:scale-95 transition-all" href="#assiettes">Assiettes</a>
+<a class="px-6 py-2.5 rounded-full bg-surface-container text-on-surface-variant font-medium whitespace-nowrap text-sm hover:bg-surface-container-high hover:scale-105 active:scale-95 transition-all" href="#routiers">Routiers</a>
+<a class="px-6 py-2.5 rounded-full bg-surface-container text-on-surface-variant font-medium whitespace-nowrap text-sm hover:bg-surface-container-high hover:scale-105 active:scale-95 transition-all" href="#fritures">Fritures</a>
+<a class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-bold shadow-sm whitespace-nowrap text-sm hover:scale-105 active:scale-95 transition-all" href="#boissons">Boissons</a>
+</div>
+</section>
+<!-- Section: Pitas & Durums -->
+<section class="mb-16" id="pitas">
+<h2 class="font-display font-black text-3xl mb-8 flex items-center gap-3">
+<span class="w-8 h-1 bg-primary rounded-full"></span>
+            Pitas &amp; Durums
+        </h2>
+<p class="text-on-surface-variant mb-8 -mt-4 text-sm italic">Servis dans notre pain artisanal pétri chaque matin. Choix de sauce inclus.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<script>
+                const pitas = [
+                    { name: "Pita Viande", desc: "Viande de boeuf et agneau marinée maison", p: "5,50€", g: "8,00€", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD-GWEar56Rcw1ZLR9aVAc_ivClMlEFluaPvj7hdAke2oxljl-m8QCAI8gnst3LIHEx6kHsd8foxXCAi_KTT6RuSLj3kMDbXVG_eRyC14cD7hm4LEbfR3Da7WIFij6MYwmKjDIZJIYDUCt58_Z2FC8eIMFRI5Kn46V7jIL4IgbIfq48qESNb7Ryq7SK0X6EvcDCHZelkRQfKolgtfXUYSmEoS2PpesCE_KwVRzIm9PvNXvaJBHeQdC0WXZf31hKAivSXgs88gfccg4" },
+                    { name: "Pita Poulet", desc: "Poulet fermier grillé aux épices orientales", p: "6,00€", g: "8,50€", img: "https://lh3.googleusercontent.com/aida-public/AB6AXuD-ZfYV2Jts2Vd34cWM-EmpGB0Kxr9uNA3j563jzXIIh2d3ExtTeGKBD5ovi5LzBS95fnBqSCqLKkiB_b9VbV_sjHbGrbLzquQZOm3RdaLZEnMAghRtMndFSYrUCyMw-L-b6dannKytnKkXmSjUKwbTen2yosmETKyHsNduJ7nXbPt3iSJg0ce6PRhBjookeMm95Rk12wdXaZ9Qlcn12caLZsffLbcSa6LJlWQya8IjahrhDmWyEFz2hCYHBCwlE-tJCjNLBwsjgpI" },
+                    { name: "Mixte", desc: "Mélange savoureux de viande et poulet", p: "6,50€", g: "9,00€" },
+                    { name: "Kofte", desc: "Boulettes de viande hachée aux herbes fraîches", p: "6,00€", g: "8,50€" },
+                    { name: "Merguez", desc: "Merguez artisanales relevées", p: "6,00€", g: "8,50€" },
+                    { name: "Brochette", desc: "Brochettes de dinde tendres", p: "6,50€", g: "9,00€" },
+                    { name: "Adana", desc: "Brochette de viande hachée épicée traditionnelle", p: "6,50€", g: "9,00€" },
+                    { name: "Hawaii", desc: "Poulet grillé et tranches d'ananas frais", p: "6,50€", g: "9,00€" },
+                    { name: "Feta", desc: "Pita végétarienne avec véritable feta et crudités", p: "5,50€", g: "7,50€" },
+                    { name: "Végétarien", desc: "Assortiment de crudités fraîches et mezzés", p: "5,00€", g: "7,00€" }
+                ];
+
+                pitas.forEach(item => {
+                    document.write(`
+                        <div class="bg-surface-container-low rounded-xl p-5 border border-outline-variant/10 hover:shadow-md transition-all group">
+                            ${item.img ? `<div class="aspect-[16/9] mb-4 rounded-lg overflow-hidden bg-white"><img src="${item.img}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"></div>` : ''}
+                            <div class="flex justify-between items-start mb-1">
+                                <h4 class="font-display font-bold text-lg">${item.name}</h4>
+                                <div class="text-right">
+                                    <div class="text-xs text-primary font-bold uppercase tracking-tighter">Petit / Grand</div>
+                                    <div class="font-display font-black text-primary">${item.p} / ${item.g}</div>
+                                </div>
+                            </div>
+                            <p class="text-sm text-on-surface-variant mb-4">${item.desc}</p>
+                            <details class="group/acc">
+                                <summary class="flex items-center gap-2 cursor-pointer list-none text-on-surface-variant/60 font-bold text-[10px] uppercase tracking-wider">
+                                    <span class="material-symbols-outlined text-xs">info</span> Allergènes
+                                </summary>
+                                <div class="mt-2 flex gap-2">
+                                    <span class="w-6 h-6 rounded-full bg-error-container/20 flex items-center justify-center material-symbols-outlined text-[12px] text-error" title="Gluten">bakery_dining</span>
+                                    ${item.name.includes('Feta') ? '<span class="w-6 h-6 rounded-full bg-error-container/20 flex items-center justify-center material-symbols-outlined text-[12px] text-error" title="Lactose">water_drop</span>' : ''}
+                                </div>
+                            </details>
+                        </div>
+                    `);
+                });
+            </script>
+</div>
+</section>
+<!-- Section: Lahmacun (Signature) -->
+<section class="mb-16" id="lahmacun">
+<div class="group bg-surface-container-lowest rounded-xl p-8 border-2 border-primary-container relative overflow-hidden flex flex-col md:flex-row gap-8 transition-all hover:shadow-xl">
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest z-10">Signature</div>
+<div class="w-full md:w-1/2 aspect-[4/3] rounded-xl overflow-hidden">
+<img alt="Traditional Turkish Lahmacun" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyvG5OhAdAi9SSysyFlkCT5LI9kvpLW0NcAEzdK3aj_Dpkt1_T41iTF9_QwBx1WxZbpOj9gnFKLb8_mMuCRr17RRsvDaYDN6Y7fLX-cV1BMbVK7B4rIinEThC5CsidH7bN6kwhWaQzYHNuBjUM22UZOafCtXbPcqug9ZtA_vDIE7pIKIvd0Aa_CTGKJCd1hX68d_9tKtZiBxwx_5ua-_XRK64is99mE7rJbOWwlkmQEK8XT_qFoWfnHoTg_-_8aN_L46R8txz4AIM"/>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-center">
+<h2 class="font-display font-black text-3xl tracking-tight mb-2">Le Véritable Lahmacun</h2>
+<span class="font-display font-bold text-3xl text-primary mb-4">6,00€</span>
+<p class="text-on-surface-variant mb-6 leading-relaxed">Notre spécialité historique : une galette fine garnie d'un mélange de viande et légumes frais selon la tradition anatolienne. Préparé sur place.</p>
+<details class="group/acc">
+<summary class="flex items-center gap-2 cursor-pointer list-none text-primary font-bold text-sm uppercase tracking-wider">
+<span class="material-symbols-outlined transition-transform group-open/acc:rotate-180">expand_more</span>
+                        Détails &amp; Allergènes
+                    </summary>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 space-y-4">
+<p class="text-sm text-on-surface-variant">Pain artisanal, viande hachée de boeuf, oignons, tomates, persil, épices orientales.</p>
+<div class="flex flex-wrap gap-3">
+<div class="flex items-center gap-1 bg-surface-container-low px-2 py-1 rounded text-[10px] font-bold">
+<span class="material-symbols-outlined text-[16px]">bakery_dining</span> GLUTEN
+                            </div>
+<div class="flex items-center gap-1 bg-tertiary-container/30 px-2 py-1 rounded text-[10px] font-bold text-on-tertiary-container">
+<span class="material-symbols-outlined text-[16px]">eco</span> MAISON
+                            </div>
+</div>
+</div>
+</details>
+</div>
+</div>
+</section>
+<!-- Section: Assiettes -->
+<section class="mb-16" id="assiettes">
+<h2 class="font-display font-black text-3xl mb-8 flex items-center gap-3">
+<span class="w-8 h-1 bg-primary rounded-full"></span>
+            Nos Assiettes Gourmandes
+        </h2>
+<p class="text-on-surface-variant mb-8 -mt-4 text-sm italic">Toutes nos assiettes sont servies généreusement avec frites fraîches et salade composée.</p>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<div class="bg-on-surface text-surface rounded-xl p-8 flex flex-col gap-6 overflow-hidden group border border-on-surface">
+<div class="relative aspect-video rounded-xl overflow-hidden">
+<img alt="Platter for two" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvilY4lGnt3XUc47b20QElFGfsdzdtVQ--vYS9vs8v_KSgXLAqZ00ne1X2wTnzyVYZNRHXkJmfGcKcZVniFGpWA2gqClOG2XY9PQb7BSC5kTp2Cj1CVj4ktfUZuwPmmJzX-ItlkaOgIeWRmiak2DFhQ6W-Dz7LYyLUCOOhtvhe6sObLDxo-TMEpqvJlITb-GldoOsflvHO8cGIR19wuoxgSpuPS4CCNRLrHCMKAkUC9gVOjUHG0P-o06vVf5aBCvG5_VLs7Xd7uZY"/>
+<div class="absolute top-4 left-4 bg-primary px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Le Festin pour 2</div>
+</div>
+<div>
+<h3 class="font-display font-black text-3xl mb-1">Assiette Maison</h3>
+<p class="text-surface/70 mb-4 italic text-sm">Sélection du chef - 7 variétés de viandes</p>
+<div class="font-display font-bold text-4xl mb-6 text-primary-container">31,00€</div>
+<ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-2 mb-8 text-sm text-surface/80">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> 7 viandes marinées</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Frites fraîches</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> Salade croquante</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-sm">check_circle</span> 2 Sauces au choix</li>
+</ul>
+</div>
+</div>
+<div class="space-y-6">
+<div class="bg-surface-container-low p-6 rounded-xl border border-outline-variant/10">
+<div class="flex justify-between items-center mb-2">
+<h4 class="font-display font-black text-xl">Assiette Calimero</h4>
+<span class="font-display font-bold text-xl text-primary">16,50€</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-4">Assortiment de 5 viandes, servi avec frites et salade.</p>
+<div class="flex items-center gap-2 text-[10px] font-bold text-primary bg-primary/10 px-3 py-1 rounded-full w-fit">SIGNATURE INDIVIDUELLE</div>
+</div>
+<div class="grid grid-cols-1 gap-4">
+<div class="p-5 bg-surface-container-lowest rounded-xl border border-outline-variant/20 flex justify-between items-center">
+<div>
+<h4 class="font-bold">Assiette Simple</h4>
+<p class="text-xs text-on-surface-variant">1 viande au choix + frites &amp; salade</p>
+</div>
+<span class="font-display font-bold text-primary">10,50€</span>
+</div>
+<div class="p-5 bg-surface-container-lowest rounded-xl border border-outline-variant/20 flex justify-between items-center">
+<div>
+<h4 class="font-bold">Assiette Royale</h4>
+<p class="text-xs text-on-surface-variant">3 viandes au choix + frites &amp; salade</p>
+</div>
+<span class="font-display font-bold text-primary">14,00€</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Routiers & Pita Box -->
+<section class="mb-16" id="routiers">
+<h2 class="font-display font-black text-3xl mb-8 flex items-center gap-3">
+<span class="w-8 h-1 bg-primary rounded-full"></span>
+            Section Routiers
+        </h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-1 bg-primary/5 border-2 border-primary/20 rounded-xl p-6 flex flex-col justify-between">
+<div>
+<div class="bg-primary text-on-primary text-[10px] font-bold px-2 py-1 rounded inline-block mb-3 uppercase">Top Vente</div>
+<h4 class="font-display font-black text-2xl mb-2">Pita Box</h4>
+<p class="text-sm text-on-surface-variant mb-6 leading-relaxed">Le format pratique : Viande au choix + frites croustillantes + sauce dans une box nomade.</p>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-3xl font-display font-black text-primary">4,50€</span>
+</div>
+</div>
+<div class="md:col-span-2 bg-surface-container-low rounded-xl p-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6">
+<div class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
+<span class="font-bold">Pitas Routiers (Mixte)</span>
+<span class="font-display font-bold text-primary">8,50€</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
+<span class="font-medium">Mexicanos</span>
+<span class="font-display font-bold text-primary">6,50€</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
+<span class="font-medium">Fricandelle Special</span>
+<span class="font-display font-bold text-primary">6,00€</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
+<span class="font-medium">Hamburger Routier</span>
+<span class="font-display font-bold text-primary">7,00€</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
+<span class="font-medium">Poulycroc</span>
+<span class="font-display font-bold text-primary">6,50€</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/30 pb-2">
+<span class="font-medium">Viandelle</span>
+<span class="font-display font-bold text-primary">6,00€</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Fritures & Snacks -->
+<section class="mb-16" id="fritures">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-4">
+<h2 class="font-display font-black text-3xl mb-4">La Friture</h2>
+<p class="text-on-surface-variant mb-8 text-sm">Le savoir-faire belge : nos frites sont cuites en deux bains pour un croustillant parfait.</p>
+<div class="bg-surface-container-high rounded-xl p-6 flex items-center gap-4 group">
+<div class="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+<img alt="Belgian fries" class="w-full h-full object-cover group-hover:scale-110 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQeOOt3757FdAD8bSY5t465FqNHuUPgHIhyNLUz0-5ZRl3wRGrW3LYjAxhsS9fY-rLITCcRmfbLBHZ8E9c9z3t2Omcd43bZFSB9tnq59PLCURFroNjaXvIqoKhLckVx9grAaWwGzfr8Ygvv252NSqpqTUAId8nQc9HbRAzK_h-PBS0rdWsD4PBVjpOXxM_vKnxrl5g3P3OR8MyqyLssMbDnO0iP7m0tf_Hl2J0tlUKkMfZ5esk2qGBCpHFCudKbVyY_Js9pK272fk"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between">
+<span class="font-bold">Portion de Frites</span>
+<span class="font-bold text-primary">2,50€</span>
+</div>
+<div class="flex gap-2 mt-2">
+<span class="text-[9px] font-black px-1.5 py-0.5 bg-primary/20 text-primary rounded">VEGAN</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 bg-surface-container-low rounded-xl p-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4">
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/20">
+<span>Cheeseburger Maison</span>
+<span class="font-bold text-primary">5,00€</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/20">
+<span>Hamburger</span>
+<span class="font-bold text-primary">4,50€</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/20">
+<span>Chicken Fingers (6pcs)</span>
+<span class="font-bold text-primary">4,00€</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/20">
+<span>Nuggets (6pcs)</span>
+<span class="font-bold text-primary">3,50€</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/20">
+<span>Fricandelle</span>
+<span class="font-bold text-primary">1,90€</span>
+</div>
+<div class="flex justify-between items-center py-2 border-b border-outline-variant/20">
+<span>Viandelle</span>
+<span class="font-bold text-primary">2,20€</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Sauces & Boissons -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-24" id="boissons">
+<div class="bg-tertiary-container/10 border border-tertiary-container/30 rounded-2xl p-8">
+<h3 class="font-display font-black text-2xl mb-6 flex items-center gap-2 text-on-tertiary-container">
+<span class="material-symbols-outlined">restaurant_menu</span>
+                Nos Sauces Maison
+            </h3>
+<p class="text-sm mb-6 text-on-tertiary-container/80 italic">Incluses dans vos pitas &amp; assiettes. Recettes secrètes de la famille.</p>
+<div class="flex flex-wrap gap-2">
+<script>
+                    const sauces = ["Aïoli", "Tzatziki", "Harissa", "Samourai", "Maison Piquant", "Hannibal", "Hawaï", "Andalouse", "Algérienne", "Brésil", "Cocktail", "Tartare", "Ketchup Curry", "Mayo", "Ananas"];
+                    sauces.forEach(s => {
+                        document.write(`<span class="px-3 py-1.5 bg-surface-container-lowest rounded-lg text-xs font-bold shadow-sm border border-outline-variant/10 text-on-surface-variant">${s}</span>`);
+                    });
+                </script>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-8 flex flex-col justify-between">
+<div>
+<h3 class="font-display font-black text-2xl mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">local_bar</span>
+                    Boissons Fraîches
+                </h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/10">
+<span class="font-medium">Softs (Coca, Fanta, Sprite)</span>
+<span class="font-display font-bold text-primary text-xl">2,00€</span>
+</div>
+<div class="flex justify-between items-center p-3 bg-surface-container-lowest rounded-xl border border-outline-variant/10">
+<span class="font-medium">Eau Minérale / Pétillante</span>
+<span class="font-display font-bold text-primary text-xl">2,00€</span>
+</div>
+<div class="flex justify-between items-center p-3 bg-primary/10 rounded-xl border border-primary/20">
+<div class="flex flex-col">
+<span class="font-bold text-primary">Ayran Traditionnel</span>
+<span class="text-[10px] uppercase tracking-wider text-primary/70">Boisson au yaourt</span>
+</div>
+<span class="font-display font-bold text-primary text-xl">2,00€</span>
+</div>
+</div>
+</div>
+<div class="mt-8 p-4 bg-surface-container-high rounded-xl text-center">
+<p class="text-xs text-on-surface-variant/60 font-bold uppercase tracking-widest">Prix nets taxes et service compris</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f4f4f1] dark:bg-[#1a1c1b] full-width py-12 px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
+<div class="space-y-4 text-center md:text-left">
+<span class="font-['Epilogue'] font-bold text-[#1a1c1b] dark:text-[#faf9f7] text-3xl">Pita Calimero</span>
+<p class="font-['Plus_Jakarta_Sans'] text-label-md uppercase tracking-[0.05em] text-[#1a1c1b]/70 dark:text-[#faf9f7]/70">L'Artisan de Malmedy - Depuis 1998</p>
+<div class="flex gap-4 justify-center md:justify-start">
+<span class="material-symbols-outlined text-[#506600] cursor-pointer hover:scale-110 transition-transform">social_leaderboard</span>
+<span class="material-symbols-outlined text-[#506600] cursor-pointer hover:scale-110 transition-transform">camera_alt</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 text-center md:text-left">
+<nav class="flex flex-col gap-2">
+<a class="font-['Plus_Jakarta_Sans'] text-label-md uppercase tracking-[0.05em] text-[#1a1c1b]/70 dark:text-[#faf9f7]/70 hover:text-[#506600] transition-all underline-offset-4 hover:underline" href="#">Menu</a>
+<a class="font-['Plus_Jakarta_Sans'] text-label-md uppercase tracking-[0.05em] text-[#1a1c1b]/70 dark:text-[#faf9f7]/70 hover:text-[#506600] transition-all underline-offset-4 hover:underline" href="#">L'Histoire</a>
+</nav>
+<nav class="flex flex-col gap-2">
+<a class="font-['Plus_Jakarta_Sans'] text-label-md uppercase tracking-[0.05em] text-[#1a1c1b]/70 dark:text-[#faf9f7]/70 hover:text-[#506600] transition-all underline-offset-4 hover:underline" href="#">Contact</a>
+<a class="font-['Plus_Jakarta_Sans'] text-label-md uppercase tracking-[0.05em] text-[#1a1c1b]/70 dark:text-[#faf9f7]/70 hover:text-[#506600] transition-all underline-offset-4 hover:underline" href="#">Localisation</a>
+</nav>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-outline-variant/30 text-center">
+<p class="font-['Plus_Jakarta_Sans'] text-xs uppercase tracking-[0.1em] text-[#1a1c1b]/40">© 2024 Pita Calimero - L'Artisan de Malmedy</p>
+</div>
+</footer>
+</body></html>
