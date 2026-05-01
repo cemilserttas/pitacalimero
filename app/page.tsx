@@ -197,7 +197,7 @@ export default function Page() {
               <span className="font-label text-label-md uppercase tracking-[0.1em] text-primary mb-4 block relative z-30">
                 {t.hero.welcome}
               </span>
-              <h1 className="relative z-30 font-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight leading-none text-on-surface mb-6 pt-2">
+              <h1 className="relative z-30 font-display font-black text-5xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tight leading-none text-on-surface mb-6 pt-2 break-words max-w-full">
                 {t.hero.title_1}<span className="text-primary italic">{t.hero.title_2}</span>
               </h1>
               <p className="text-lg md:text-xl text-on-surface-variant max-w-md leading-relaxed mb-8">
