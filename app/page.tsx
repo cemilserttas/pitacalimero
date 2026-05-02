@@ -189,51 +189,45 @@ export default function Page() {
         </div>
       </div>
 
-      <main className="max-w-7xl mx-auto px-4 md:px-8 pt-[72px]">
-        {/* Hero Section */}
-        <header className="relative overflow-hidden pt-4 pb-8 md:py-24">
-          <div className="flex flex-col md:grid md:grid-cols-2 items-center gap-8 md:gap-12">
-            <div className="z-20 relative order-1 md:order-1 flex flex-col items-center text-center md:items-start md:text-left">
-              <span className="font-label text-label-md uppercase tracking-[0.1em] text-primary mb-4 block relative z-30">
-                {t.hero.welcome}
-              </span>
-              <h1 className="relative z-30 font-display font-black text-5xl sm:text-6xl md:text-5xl lg:text-6xl xl:text-7xl tracking-tight leading-none text-on-surface mb-6 pt-2 break-words max-w-full">
-                {t.hero.title_1}<span className="text-primary italic">{t.hero.title_2}</span>
-              </h1>
-              <p className="text-lg md:text-xl text-on-surface-variant max-w-md leading-relaxed mb-8">
-                {t.hero.desc}
-              </p>
-              <div className="flex items-center gap-4 w-full md:w-auto">
-                <a
-                  className="w-full md:w-auto px-8 py-4 bg-primary text-on-primary rounded-xl font-semibold scale-102 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary/20 text-center inline-block cursor-pointer"
-                  onClick={(e) => scrollToId(e, 'menu-nav')}
-                >
-                  {t.hero.btn}
-                </a>
-              </div>
-            </div>
-            <div className="relative order-2 md:order-2 w-full mt-4 md:mt-0">
-              <div className="aspect-square relative z-10 overflow-hidden rounded-tl-[100px] rounded-br-[100px] shadow-2xl">
-                <img
-                  alt="Artisanal food photograph"
-                  className="w-full h-full object-cover"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4N5aAP7p0UTNKLFMY2-APAQTHrWgZLqA7RoZ_AjMBcg29ltFpQ-Rg7j2Jew0P2GXtK898UAzenKRG46lIyCWICZn1szAj-qWFTC_ICmV4GNciv3PSwXvXwJWDx6l4tfwga7MB4hpN-KRglWo-kaawjr4zJJJyZhRs6NRaNxihQZxyZEysXqPBHFaUTBkAdZO4pYrR9nSjyu0ndcDg6zsJzJwLi8V0_eJZn_UrkTSXATmcHLIs8MM19bWRX8WJdNSqGuf_tqfO7Hc"
-                />
-              </div>
-              <div className="absolute -bottom-2 -right-2 md:-top-6 md:-right-6 w-28 h-28 md:w-32 md:h-32 bg-tertiary-container rounded-full flex items-center justify-center rotate-12 z-20 shadow-xl border-4 border-surface">
-                <div className="text-center">
-                  <span className="block font-display font-black text-on-tertiary-container text-xs uppercase tracking-tighter">
-                    {t.hero.badge_1}
-                  </span>
-                  <span className="block font-display font-black text-on-tertiary-container text-lg uppercase leading-none">
-                    {t.hero.badge_2}
-                  </span>
-                </div>
-              </div>
-              <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-primary-container/20 rounded-full blur-3xl -z-10"></div>
-            </div>
+      {/* Hero Section */}
+      <header className="relative w-full h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
+        {/* Background Video */}
+        <div className="absolute inset-0 w-full h-full z-0 pointer-events-none overflow-hidden bg-black">
+          <iframe 
+            src="https://www.youtube.com/embed/NKoJDyKo1QQ?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&playlist=NKoJDyKo1QQ&playsinline=1"
+            className="absolute top-1/2 left-1/2 w-[100vw] h-[56.25vw] min-h-[100vh] min-w-[177.77vh] -translate-x-1/2 -translate-y-1/2"
+            style={{ border: 0 }}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+        
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/60 z-10"></div>
+
+        {/* Content */}
+        <div className="relative z-20 flex flex-col items-center text-center px-4 max-w-4xl mx-auto pt-[72px]">
+          <span className="font-label text-label-md uppercase tracking-[0.2em] text-[#a7c64a] mb-4 block drop-shadow-md">
+            {t.hero.welcome}
+          </span>
+          <h1 className="font-display font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight leading-none text-white mb-6 drop-shadow-xl break-words max-w-full">
+            {t.hero.title_1}<span className="text-[#a7c64a] italic">{t.hero.title_2}</span>
+          </h1>
+          <p className="text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed mb-8 drop-shadow-md">
+            {t.hero.desc}
+          </p>
+          <div className="flex items-center gap-4">
+            <a
+              className="px-8 py-4 bg-primary text-on-primary rounded-xl font-semibold scale-102 hover:scale-105 active:scale-95 transition-all shadow-lg shadow-primary/20 text-center inline-block cursor-pointer"
+              onClick={(e) => scrollToId(e, 'menu-nav')}
+            >
+              {t.hero.btn}
+            </a>
           </div>
-        </header>
+        </div>
+      </header>
+
+      <main className="max-w-7xl mx-auto px-4 md:px-8 pt-12">
 
         {/* Menu Navigation */}
         <section
