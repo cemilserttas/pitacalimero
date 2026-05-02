@@ -33,7 +33,6 @@ export const translations = {
       { id: "pitas", label: "Pitas & Durums" },
       { id: "lahmacun", label: "Lahmacun" },
       { id: "assiettes", label: "Assiettes" },
-      { id: "etudiant", label: "Menu Étudiant" },
       { id: "routiers", label: "Routiers" },
       { id: "fritures", label: "Fritures" },
       { id: "boissons", label: "Boissons" }
@@ -184,7 +183,6 @@ export const translations = {
       { id: "pitas", label: "Pitas & Durums" },
       { id: "lahmacun", label: "Lahmacun" },
       { id: "assiettes", label: "Platters" },
-      { id: "etudiant", label: "Student Menu" },
       { id: "routiers", label: "Road Snacks" },
       { id: "fritures", label: "Fries & Snacks" },
       { id: "boissons", label: "Drinks" }
@@ -335,7 +333,6 @@ export const translations = {
       { id: "pitas", label: "Pita's & Durums" },
       { id: "lahmacun", label: "Lahmacun" },
       { id: "assiettes", label: "Schotels" },
-      { id: "etudiant", label: "Studentenmenu" },
       { id: "routiers", label: "Snacks" },
       { id: "fritures", label: "Friet & Snacks" },
       { id: "boissons", label: "Dranken" }
@@ -486,7 +483,6 @@ export const translations = {
       { id: "pitas", label: "Pitas & Durums" },
       { id: "lahmacun", label: "Lahmacun" },
       { id: "assiettes", label: "Teller" },
-      { id: "etudiant", label: "Studentenmenü" },
       { id: "routiers", label: "Snacks" },
       { id: "fritures", label: "Pommes & Snacks" },
       { id: "boissons", label: "Getränke" }
