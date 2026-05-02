@@ -155,11 +155,11 @@ export default function Page() {
 
       {/* Mobile Menu Overlay */}
       <div 
-        className={`fixed inset-0 bg-surface z-40 transition-transform duration-500 ease-in-out ${
+        className={`fixed inset-0 bg-[#faf9f7] dark:bg-[#1a1c1b] z-40 transition-transform duration-500 ease-in-out ${
           isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >
-        <div className="flex flex-col h-full pt-24 px-8 pb-8">
+        <div className="flex flex-col min-h-full h-full overflow-y-auto pt-24 px-8 pb-8">
           <div className="flex flex-col gap-6 text-2xl font-display font-black text-on-surface">
             <a href="#menu-nav" onClick={(e) => scrollToId(e, 'menu-nav')} className="hover:text-primary transition-colors">{t.nav.menu}</a>
             <a href="#histoire" onClick={(e) => scrollToId(e, 'histoire')} className="hover:text-primary transition-colors">{t.nav.history}</a>
