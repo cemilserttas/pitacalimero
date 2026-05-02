@@ -569,21 +569,34 @@ export default function Page() {
           <div className="bg-surface-container-low rounded-3xl p-8 md:p-12 text-center border border-outline-variant/20">
             <h2 className="font-display font-black text-3xl mb-6">{t.horaires.title}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <div className="bg-surface p-6 rounded-2xl shadow-sm">
-                <h4 className="font-bold mb-2">{t.horaires.lun_jeu}</h4>
-                <p className="text-on-surface-variant">11:00 - 14:30</p>
-                <p className="text-on-surface-variant">17:00 - 23:00</p>
-              </div>
-              <div className="bg-surface p-6 rounded-2xl shadow-sm ring-2 ring-primary/20">
-                <h4 className="font-bold mb-2 text-primary">{t.horaires.ven}</h4>
-                <p className="text-on-surface-variant">11:00 - 14:30</p>
-                <p className="text-on-surface-variant">17:00 - 00:00</p>
-              </div>
-              <div className="bg-surface p-6 rounded-2xl shadow-sm">
-                <h4 className="font-bold mb-2">{t.horaires.sam_dim}</h4>
-                <p className="text-on-surface-variant">11:00 - 14:30</p>
-                <p className="text-on-surface-variant">17:00 - 23:00</p>
-              </div>
+            {(() => {
+                const today = new Date().getDay(); // 0=dim, 1=lun, 2=mar, 3=mer, 4=jeu, 5=ven, 6=sam
+                const isLunJeu = today >= 1 && today <= 4;
+                const isVen = today === 5;
+                const isSamDim = today === 6 || today === 0;
+                return (
+                  <>
+                    <div className={`p-6 rounded-2xl shadow-sm transition-all ${isLunJeu ? 'bg-primary/10 ring-2 ring-primary/40' : 'bg-surface'}`}>
+                      <h4 className={`font-bold mb-2 ${isLunJeu ? 'text-primary' : ''}`}>{t.horaires.lun_jeu}</h4>
+                      <p className="text-on-surface-variant">11:00 - 14:30</p>
+                      <p className="text-on-surface-variant">17:00 - 23:00</p>
+                      {isLunJeu && <p className="text-primary text-xs font-bold mt-2 uppercase tracking-widest">Aujourd&apos;hui</p>}
+                    </div>
+                    <div className={`p-6 rounded-2xl shadow-sm transition-all ${isVen ? 'bg-primary/10 ring-2 ring-primary/40' : 'bg-surface'}`}>
+                      <h4 className={`font-bold mb-2 ${isVen ? 'text-primary' : ''}`}>{t.horaires.ven}</h4>
+                      <p className="text-on-surface-variant">11:00 - 14:30</p>
+                      <p className="text-on-surface-variant">17:00 - 00:00</p>
+                      {isVen && <p className="text-primary text-xs font-bold mt-2 uppercase tracking-widest">Aujourd&apos;hui</p>}
+                    </div>
+                    <div className={`p-6 rounded-2xl shadow-sm transition-all ${isSamDim ? 'bg-primary/10 ring-2 ring-primary/40' : 'bg-surface'}`}>
+                      <h4 className={`font-bold mb-2 ${isSamDim ? 'text-primary' : ''}`}>{t.horaires.sam_dim}</h4>
+                      <p className="text-on-surface-variant">11:00 - 14:30</p>
+                      <p className="text-on-surface-variant">17:00 - 23:00</p>
+                      {isSamDim && <p className="text-primary text-xs font-bold mt-2 uppercase tracking-widest">Aujourd&apos;hui</p>}
+                    </div>
+                  </>
+                );
+              })()}
             </div>
           </div>
         </section>
