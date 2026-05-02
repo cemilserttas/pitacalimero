@@ -232,7 +232,7 @@ export default function Page() {
         {/* Menu Navigation */}
         <section
           className={`sticky z-30 py-4 -mx-4 px-4 mb-12 border-b border-outline-variant/20 shadow-sm overflow-hidden transition-all duration-500 bg-surface/90 backdrop-blur-xl ${
-            isHeaderVisible ? "top-[72px]" : "top-0"
+            isHeaderVisible ? "top-[80px]" : "top-0"
           }`}
           id="menu-nav"
         >
